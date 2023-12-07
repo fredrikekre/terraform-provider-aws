@@ -73,7 +73,7 @@ This resource supports the following arguments:
 * `availability_zone` - (Required) The Availability Zone in which to create your
 instance (see list below)
 * `blueprint_id` - (Required) The ID for a virtual private server image. A list of available blueprint IDs can be obtained using the AWS CLI command: `aws lightsail get-blueprints`
-* `bundle_id` - (Required) The bundle of specification information (see list below)
+* `bundle_id` - (Required) The bundle of specification information (see list below). A list of available blueprint IDs can be obtained using the AWS CLI command: `aws lightsail get-bundles`
 * `key_pair_name` - (Optional) The name of your key pair. Created in the
 Lightsail console (cannot use `aws_key_pair` at this time)
 * `user_data` - (Optional) Single lined launch script as a string to configure server with additional user data
@@ -100,6 +100,7 @@ Lightsail currently supports the following Availability Zones (e.g., `us-east-1a
 - `ap-southeast-2{a,b,c}`
 - `ca-central-1{a,b}`
 - `eu-central-1{a,b,c}`
+- `eu-north-1{a,b,c}`
 - `eu-west-1{a,b,c}`
 - `eu-west-2{a,b,c}`
 - `eu-west-3{a,b,c}`
@@ -134,6 +135,7 @@ A Bundle ID ends with one of the following suffixes depending on Availability Zo
 - ap-southeast-2: `2_2`
 - ca-central-1: `2_0`
 - eu-central-1: `2_0`
+- eu-north-1: `3_0`
 - eu-west-1: `2_0`
 - eu-west-2: `2_0`
 - eu-west-3: `2_0`
